@@ -1,0 +1,22 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: azure;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1142px;
+    flex-direction: column;
+}
