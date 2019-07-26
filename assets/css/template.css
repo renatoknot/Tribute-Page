@@ -14,9 +14,23 @@ header {
     justify-content: center;
     text-align: center;
 }
+h2 {
+    text-align: center;
+}
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     width: 1142px;
+    flex-direction: column;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.galeria {
+    display: flex;
     flex-direction: column;
 }
