@@ -62,18 +62,16 @@ h2 {
     height: 425px;
 }
 footer {
-    display: flex;
-	text-align: center;
 	background-color:#374161;
     height: 60px;
     margin-top: 30px;
-    align-items: center;
+    text-align: center;
 }
 footer p {
+    width: 100%;
+    height: 60px;;
 	font-family: "Helvetica Neue";
 	font-weight: lighter;
 	color: white;
     padding-top: 10px;
-    align-items: center;
-    text-align: justify;
 }
