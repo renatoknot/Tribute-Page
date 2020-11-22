@@ -1,78 +1,176 @@
 * {
-    font-family: Arial;
+  font-family: Arial;
 }
-
+html {
+  height: 100%;
+}
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: azure;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: azure;
+  height: 100%;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 h2 {
-    text-align: center;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
 }
 .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1142px;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1142px;
+  flex-direction: column;
 }
 #main {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  min-height: 100%;
 }
 .banner {
-    margin-top: 15px;
+  margin-top: 15px;
+  object-fit: cover;
 }
+
 .motivacional {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 .galeria {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .imagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .imagens figure {
-    display: flex;
-    flex-wrap: wrap;
-    width: 460px;
-    height: 425px;
-    margin: 41px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 460px;
+  height: 425px;
+  margin: 41px;
 }
 .imagens figcaption {
-    font-size: 13px;
+  font-size: 13px;
 }
 .imagens img {
-    width: 460px;
-    height: 425px;
+  width: 460px;
+  height: 425px;
 }
 footer {
-	background-color:#374161;
-    height: 60px;
-    margin-top: 30px;
-    text-align: center;
+  background-color: #374161;
+  margin-top: 30px;
+  text-align: center;
+  height: 70px;
 }
 footer p {
-    width: 100%;
-    height: 60px;;
-	font-family: "Helvetica Neue";
-	font-weight: lighter;
-	color: white;
-    padding-top: 10px;
-    font-size: 13px;
+  width: 100%;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  color: white;
+  padding-top: 20px;
+  font-size: 13px;
+}
+
+/* Design Responsivo Tablet */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+  }
+  .banner {
+    width: 748px;
+  }
+
+  .motivacional {
+    width: 748px;
+  }
+  .motivacional iframe {
+    width: 748px;
+    height: 327px;
+  }
+  .imagens img {
+    width: 350px;
+    height: 323px;
+  }
+  .imagens figure {
+    margin: 20px 0;
+    width: 350px;
+    height: 323px;
+    margin-right: 5px;
+    margin-bottom: 46px;
+  }
+
+  footer {
+    margin-top: 0px;
+    height: 70px;
+  }
+
+  footer p {
+    padding-top: 18px;
+  }
+}
+
+/* Design Responsivo Mobile */
+
+@media only screen and (max-width: 787px) {
+  .container {
+    width: 300px;
+  }
+
+  .banner {
+    width: 440px;
+  }
+
+  .motivacional {
+    width: 300px;
+  }
+  .motivacional iframe {
+    max-width: 100%;
+  }
+  .imagens {
+    text-align: center;
+  }
+  .imagens img {
+    width: 300px;
+    height: 277px;
+  }
+  .imagens figure {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    justify-content: center;
+    height: 370px;
+  }
+  /* .imagens figure:nth-child(0) {
+    display: inline-block;
+  } */
+  .imagens figcaption {
+    margin-bottom: 80px;
+    width: 460px;
+  }
+
+  footer {
+    margin-top: 0px;
+    height: 70px;
+  }
+
+  footer p {
+    padding-top: 18px;
+  }
 }
