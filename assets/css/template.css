@@ -157,12 +157,10 @@ footer p {
     justify-content: center;
     height: 370px;
   }
-  /* .imagens figure:nth-child(0) {
-    display: inline-block;
-  } */
+
   .imagens figcaption {
     margin-bottom: 80px;
-    width: 460px;
+    width: 300px;
   }
 
   footer {
